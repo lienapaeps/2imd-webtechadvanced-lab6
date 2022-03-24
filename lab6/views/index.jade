@@ -4,13 +4,13 @@ block content
   h1 Update score
     div.update__scoreboard
       form.update__form
-        select(name="team") Team
-          option(value="Real Madrid") Real Madrid
-          option(value="Sevilla") Sevilla 
-          option(value="Fc Barcelona") Fc Barcelona
-          option(value="Atlético Madrid") Atlético Madrid
-          option(value="Real Betis") Real Betis
+        select(name="team" id="team" class="select__team") Team
+          option(value="rm") Real Madrid
+          option(value="se") Sevilla 
+          option(value="fcb") Fc Barcelona
+          option(value="am") Atlético Madrid
+          option(value="rb") Real Betis
         label(for="score" class="label__score") Score 
-        input(type="text" name="score" class="score__input")
+        input(type="text" id="score" name="score" class="score__input")
         input(type="submit" value="Update score")
   script(src='/javascripts/app.js')
