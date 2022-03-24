@@ -6,3 +6,56 @@ body {
 a {
   color: #00B7FF;
 }
+
+.update__scoreboard {
+  margin-top: 1em;
+  background-color: #eee;
+  border-radius: 6px;
+  text-align: center;
+}
+
+label.score {
+  font-size: 16px;
+  font-weight: normal;
+  margin: .5em;
+}
+
+.score__input {
+  width: 50px;
+  margin-right: .5em;
+}
+
+.update__form {
+  padding: 1.5em;
+}
+
+.scoreboard {
+  margin-top: 1em;
+  font-size: 16px;
+}
+
+.table__scoreboard {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: normal;
+}
+
+.table__scoreboard td, .table__scoreboard th {
+  padding: 6px;
+}
+
+.table__scoreboard tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.table__scoreboard tr:hover {
+  background-color: #ddd;
+}
+
+.table__scoreboard th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #045aaa;
+  color: #fff;
+}
