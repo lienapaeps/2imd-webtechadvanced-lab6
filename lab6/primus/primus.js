@@ -1,3 +1,5 @@
+// SERVER
+
 const Primus = require('primus');
 
 let go = (server) => {
@@ -7,14 +9,18 @@ let go = (server) => {
 
     // primus.save(__dirname +'/primuslib.js');
 
+    // checken of er connectie is met spark, spark is 1 connectie of client
     primus.on('connection', (spark) => {
         // spark is the new connection.
         console.log("✨");
-        // spark.on('data', (data) => {
-        //     console.log('Data komt binnen');
-        //     // console.log(data);
-        //     primus.write(data); // iedereen krijgt de data te zien
-        // });
+        // op de client komt er data binnen
+        spark.on('data', (data) => {
+            console.log('Data komt binnen');
+            console.log(data);
+            
+            // elke client moet de data terugkrijgen
+            primus.write(data);
+        });
     });
 
 };
