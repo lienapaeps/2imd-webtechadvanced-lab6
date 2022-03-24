@@ -1,8 +1,8 @@
 # Lab 6
 
-## Short gif of the result
+## Recorded result
 [Link naar gif](https://share.getcloudapp.com/ApuJkXEL)
 
-
 ## Heroku
-[Link naar Heroku](https://dev-lab6.herokuapp.com/)
+[Update page in Heroku](https://dev-lab6.herokuapp.com/)
+[Scoreboard/live page in Heroku](https://dev-lab6.herokuapp.com/live)
