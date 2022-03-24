@@ -12,11 +12,11 @@ primus.on("data", data => {
     console.log("Er is data!!!"); // er komt data binnen
     console.log(data);
 
-    let team = data.teamname;
+    let team = "." + data.teamname;
     let score = data.score;
 
     console.log(team);
     console.log(score)
     
-    let td = document.querySelector("td");
+    document.querySelector(team).innerHTML = score;
 });
