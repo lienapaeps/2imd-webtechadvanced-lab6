@@ -1,4 +1,25 @@
 extends layout
 
 block content
-  h1 Viewing live score
+  h1 Scoreboard
+    div.scoreboard
+      table.table__scoreboard
+        tr
+          th Team
+          th Score
+        tr
+          td Real Madrid
+          td 0
+        tr
+          td Sevilla
+          td 0
+        tr
+          td Fc Barcelona
+          td 0
+        tr 
+          td Atlético Madrid
+          td 0
+        tr
+          td Real Betis
+          td 0
+  script(src='/javascripts/app.js')
